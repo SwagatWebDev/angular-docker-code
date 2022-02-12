@@ -38,7 +38,8 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome'],
+    CHROME_BIN: '/usr/bin/google-chrome',
     singleRun: false,
     restartOnFileChange: true
   });
