@@ -37,7 +37,7 @@ pipeline {
         stage('Make Prod Build') {
             steps {
                 echo 'Angular Test Project Prod Build'
-               'npx ng build --prod --base-href=/angular-test-code/ && cd dist/angular-test-code && jar -cvf angular-test-code.war *'
+                sh 'npx ng build --prod --base-href=/angular-test-code/ && cd dist/angular-test-code && jar -cvf angular-test-code.war *'
             }
         }
        stage('Deploy Application with Tomcat Server' ) {
