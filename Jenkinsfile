@@ -15,7 +15,7 @@ pipeline {
                 
             }
         }
-        stage('Install dependency') {
+        stage('Install Dependency') {
             steps {
                 echo 'Angular Test Project npm Install'
                 sh "npm install"
