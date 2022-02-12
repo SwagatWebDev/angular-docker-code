@@ -40,7 +40,7 @@ pipeline {
                'npx ng build --prod --base-href=/angular-test-code/ && cd dist/angular-test-code && jar -cvf angular-test-code.war *'
             }
         }
-       stage('Deploy Application with Tomcat Server ) {
+       stage('Deploy Application with Tomcat Server' ) {
             steps {
                 echo 'Angular Test Project Deployement with Tomcat Server using '
             }
