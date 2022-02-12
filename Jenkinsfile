@@ -21,18 +21,18 @@ pipeline {
                 sh "npm install"
             }
         }
-        stage('Testing Stage') {
-            steps {
-                echo 'Angular Test Project Code Unit Testing Stage'
-                sh 'npx ng test --no-watch --code-coverage'
-            }
-        }
-        stage('Sonar Scanner Coverage') {
-            steps {
-                echo 'Angular Test Project Sonar Scanner Coverage'
-                sh "npm run sonar"
-            }
-        }
+        // stage('Testing Stage') {
+        //     steps {
+        //         echo 'Angular Test Project Code Unit Testing Stage'
+        //         sh 'npx ng test --no-watch --code-coverage'
+        //     }
+        // }
+        // stage('Sonar Scanner Coverage') {
+        //     steps {
+        //         echo 'Angular Test Project Sonar Scanner Coverage'
+        //         sh "npm run sonar"
+        //     }
+        // }
         stage('Make Prod Build') {
             steps {
                 echo 'Angular Test Project Prod Build'
