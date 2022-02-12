@@ -18,7 +18,6 @@ pipeline {
         stage('Install dependency') {
             steps {
                 echo 'Angular Test Project npm Install'
-                // Run Maven on a Unix agent.
                 sh "npm install"
             }
         }
@@ -42,7 +41,7 @@ pipeline {
         }
        stage('Deploy Application with Tomcat Server' ) {
             steps {
-                echo 'Angular Test Project Deployement with Tomcat Server using '
+                echo 'Angular Test Project Deployement with Tomcat Server'
             }
         }
     }
