@@ -1,0 +1,8 @@
+1. Build your Docker file
+docker build -f Dockerfile -t covid19-app-latest .
+
+2. Check the image created or not
+docker images
+
+3. Run the conatainer
+docker container run -d --name angular-app -P covid19-app-latest -m ""
