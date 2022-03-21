@@ -1,11 +1,11 @@
 1. Build your Docker file
-docker build -f Dockerfile -t covid19-app-latest .
+docker build -f Dockerfile -t test-code .
 
 2. Check the image created or not
 docker images
 
 3. Run the container
-docker container run -d --name angular-app -P covid19-app-latest -m ""
+docker container run -d --name angular-app -P test-code
 
 4. Go to inspect the container check the host and port info. Run it on browser
 http://localhost:55000
